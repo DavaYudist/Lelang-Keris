@@ -1,0 +1,44 @@
+.footer-section {
+  background-color: #212529;
+}
+
+.footer-section h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-section .footer-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.footer-section .footer-link {
+  color: #adb5bd;
+  padding: 0.25rem 0;
+}
+
+.footer-section .footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-section .social-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+
+.footer-section .social-icon:hover {
+  color: #dee2e6;
+}
+
+.footer-section .contact-list li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section hr {
+  border-top: 1px solid #495057;
+}

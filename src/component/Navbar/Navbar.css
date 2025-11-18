@@ -1,0 +1,25 @@
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+  background-color: #212529;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link {
+  color: #f8f9fa !important;
+}
+
+.navbar-transparent .nav-link:hover,
+.navbar-scrolled .nav-link:hover {
+  color: #adb5bd !important;
+}

@@ -1,0 +1,32 @@
+.lelang-page-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.lelang-row-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+}
+
+.lelang-card {
+  flex: 0 0 280px;
+  margin-right: 1rem;
+}
+
+.lelang-card .card-info {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.lelang-card-link,
+.lelang-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}

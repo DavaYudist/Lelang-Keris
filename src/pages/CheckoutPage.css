@@ -1,0 +1,33 @@
+.checkout-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.form-value-box {
+  background-color: #e9ecef;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.bank-option-box {
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: white;
+}
+
+.bg-gray-custom {
+  background-color: #e3e3e3;
+  border-radius: 12px;
+}
+
+.modal-success .modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+.success-icon {
+  filter: drop-shadow(0 0 10px rgba(40, 167, 69, 0.4));
+}

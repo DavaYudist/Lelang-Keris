@@ -1,0 +1,17 @@
+.login-image-column {
+  background-image: url("/Hero-Masjid Sumenep.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 450px;
+}
