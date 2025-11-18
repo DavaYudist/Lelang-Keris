@@ -1,6 +1,7 @@
 # Lelang Keris - Platform Lelang Digital dari Desa Aeng Tong Tong ⚔️
 
-![Project Banner](public/Hero-Masjid Sumenep) 
+![Hero-Masjid Sumenep](https://github.com/user-attachments/assets/2707d9da-d83d-45a8-9dad-2f7699bd5b44)
+
 
 
 ## Tentang Projek
