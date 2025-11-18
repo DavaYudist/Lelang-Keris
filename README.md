@@ -1,16 +1,55 @@
-# React + Vite
+# Lelang Keris - Platform Lelang Digital dari Desa Aeng Tong Tong ⚔️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Banner](public/Hero-Masjid Sumenep) 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tentang Projek
 
-## React Compiler
+**Lelang Keris** adalah sebuah aplikasi berbasis website yang dirancang untuk mendigitalkan proses pelelangan Mahakarya Keris dari Desa Aeng Tong Tong, Sumenep. Aplikasi ini bertujuan untuk memperluas jangkauan pasar pengrajin keris lokal melalui platform digital yang modern, transparan, dan mudah digunakan.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Fitur Utama
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Aplikasi ini memiliki alur pengguna (User Flow) yang lengkap mulai dari pengunjung umum hingga proses transaksi:
+
+* **Landing Page Modern:** Menampilkan Hero section, informasi budaya (Tentang), showcase produk unggulan, dan testimoni pelanggan dengan efek *transparent-to-solid navbar*.
+* **Autentikasi UI:** Halaman Login dan Registrasi dengan desain *split-screen* (Form & Image).
+* **Dashboard Lelang:** Halaman khusus pengguna terdaftar dengan fitur pencarian dan *horizontal scroll carousel* untuk daftar lelang aktif.
+* **Detail Produk & Bidding:** Halaman detail interaktif dengan galeri foto, *countdown timer*, dan **Modal Pop-up** untuk mengajukan penawaran harga.
+* **Alur Checkout:** Halaman ringkasan pembelian yang menampilkan rincian biaya (pajak, ongkir) dan pemilihan metode pembayaran.
+* **Simulasi Pembayaran:** Notifikasi sukses interaktif setelah pengguna melakukan konfirmasi pembayaran.
+* **Manajemen Layout:** Menggunakan arsitektur *Multi-Layout* (Main Layout untuk umum, Lelang Layout untuk user login, dan Standalone Layout untuk Auth).
+
+## Teknologi yang Digunakan
+
+Aplikasi ini dibangun menggunakan teknologi web modern (MERN Stack ready):
+
+* **Core:** [React JS](https://react.dev/) (Vite Bundler)
+* **Styling & UI:** [React Bootstrap](https://react-bootstrap.github.io/) & CSS3 Custom
+* **Routing:** [React Router DOM v6](https://reactrouter.com/) (Navigasi SPA tanpa reload)
+* **Icons:** React Bootstrap Icons
+* **Version Control:** Git & GitHub
+
+## Struktur Folder
+
+Projek ini menerapkan struktur folder yang rapi dan terorganisir untuk memudahkan pengembangan:
+
+```bash
+src/
+├── components/          # Komponen UI yang dapat digunakan kembali
+│   ├── Footer/          # Footer global
+│   ├── Hero/            # Hero section landing page
+│   ├── Navbar/          # Navbar transparan (Landing page)
+│   ├── NavbarLelang/    # Navbar putih (Halaman Lelang)
+│   ├── MainLayout.jsx   # Layout induk halaman publik
+│   ├── LelangLayout.jsx # Layout induk halaman member
+│   └── ... (Produk, Testimoni, dll)
+├── pages/               # Halaman utama aplikasi
+│   ├── LandingPage.jsx  # Halaman Beranda
+│   ├── LoginPage.jsx    # Halaman Masuk
+│   ├── SignUpPage.jsx   # Halaman Daftar
+│   ├── LelangPage.jsx   # Dashboard Lelang
+│   ├── DetailPage.jsx   # Detail Produk & Bid
+│   └── CheckoutPage.jsx # Halaman Pembayaran
+├── App.jsx              # Manajemen Routing Utama
+└── main.jsx             # Entry point
